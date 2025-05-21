@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/black"
+    tools:context=".PedidoActivity">
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvNombreCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:drawableStart="@drawable/agregar_usuario"
+        android:drawablePadding="8dp"
+        android:padding="16dp"
+        android:text="Nombre del Cliente"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNumeroCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Número del Cliente"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/telefono"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvNombreCliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tvProducto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Producto"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/agregar_usuario"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvNumeroCliente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/tvUbicacion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ubicación"
+        android:textSize="16sp"
+        android:drawableStart="@drawable/mapa"
+        android:drawablePadding="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvProducto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout_botones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnLlamar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/llamada_telefonica"
+            android:backgroundTint="@color/black"
+            app:cornerRadius="10dp"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="@color/white"
+            android:contentDescription="Llamar"
+            android:layout_marginHorizontal="8dp"/>
+
+        <ImageButton
+            android:id="@+id/btnWsp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:src="@drawable/social"
+            android:backgroundTint="@color/black"
+            app:cornerRadius="15dp"
+            style="?attr/materialButtonOutlinedStyle"
+            app:strokeColor="@color/white"
+            android:contentDescription="WhatsApp"
+            android:layout_marginHorizontal="8dp"/>
+
+        <ImageButton
+            android:id="@+id/btnMaps"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="8dp"
+            android:backgroundTint="@color/black"
+            android:contentDescription="Maps"
+            android:src="@drawable/google_maps"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/white" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
