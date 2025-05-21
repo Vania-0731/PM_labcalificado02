@@ -1,9 +1,12 @@
 
 
 ## 🧪 Evidencias y Funcionalidades
-![Captura de pantalla 2025-05-20 225835](https://github.com/user-attachments/assets/46b31070-7ee9-49d4-bf0c-a8fc4dbacdbd)
-![Captura de pantalla 2025-05-20 225951](https://github.com/user-attachments/assets/bae1ff2c-63c1-4716-885c-aa605455595a)
-![Captura de pantalla 2025-05-20 230006](https://github.com/user-attachments/assets/9b6b1862-69b3-48b4-9e30-5e83b5b34775)
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/46b31070-7ee9-49d4-bf0c-a8fc4dbacdbd" width="250"/>
+  <img src="https://github.com/user-attachments/assets/bae1ff2c-63c1-4716-885c-aa605455595a" width="250"/>
+  <img src="https://github.com/user-attachments/assets/9b6b1862-69b3-48b4-9e30-5e83b5b34775" width="250"/>
+</p>
 
 # Laboratorio Calificado 02 - Desarrollo de Aplicaciones Android 📱
 
